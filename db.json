@@ -1,90 +1,121 @@
 {
   "users": [
-  {
-    "id": 1,
-    "name": "Alice Johnson",
-    "email": "alice.johnson@example.com",
-    "age": 28,
-    "role": "Admin",
-    "isActive": true
-  },
-  {
-    "id": 2,
-    "name": "Michael Smith",
-    "email": "michael.smith@example.com",
-    "age": 34,
-    "role": "User",
-    "isActive": true
-  },
-  {
-    "id": 3,
-    "name": "Sophia Williams",
-    "email": "sophia.williams@example.com",
-    "age": 22,
-    "role": "Moderator",
-    "isActive": false
-  },
-  {
-    "id": 4,
-    "name": "Daniel Brown",
-    "email": "daniel.brown@example.com",
-    "age": 30,
-    "role": "User",
-    "isActive": true
-  },
-  {
-    "id": 5,
-    "name": "Emily Davis",
-    "email": "emily.davis@example.com",
-    "age": 26,
-    "role": "User",
-    "isActive": true
-  },
-  {
-    "id": 6,
-    "name": "James Miller",
-    "email": "james.miller@example.com",
-    "age": 40,
-    "role": "Admin",
-    "isActive": false
-  },
-  {
-    "id": 7,
-    "name": "Olivia Wilson",
-    "email": "olivia.wilson@example.com",
-    "age": 29,
-    "role": "User",
-    "isActive": true
-  },
-  {
-    "id": 8,
-    "name": "Benjamin Moore",
-    "email": "benjamin.moore@example.com",
-    "age": 33,
-    "role": "Moderator",
-    "isActive": false
-  },
-  {
-    "id": 9,
-    "name": "Ava Taylor",
-    "email": "ava.taylor@example.com",
-    "age": 24,
-    "role": "User",
-    "isActive": true
-  },
-  {
-    "id": 10,
-    "name": "William Anderson",
-    "email": "william.anderson@example.com",
-    "age": 38,
-    "role": "Admin",
-    "isActive": true
-  }
-],
-
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "age": 28,
+      "role": "Admin",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Michael Smith",
+      "email": "michael.smith@example.com",
+      "age": 34,
+      "role": "User",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Sophia Williams",
+      "email": "sophia.williams@example.com",
+      "age": 22,
+      "role": "Moderator",
+      "isActive": false
+    },
+    {
+      "id": 4,
+      "name": "Daniel Brown",
+      "email": "daniel.brown@example.com",
+      "age": 30,
+      "role": "User",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "age": 26,
+      "role": "User",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "name": "James Miller",
+      "email": "james.miller@example.com",
+      "age": 40,
+      "role": "Admin",
+      "isActive": false
+    },
+    {
+      "id": 7,
+      "name": "Olivia Wilson",
+      "email": "olivia.wilson@example.com",
+      "age": 29,
+      "role": "User",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "name": "Benjamin Moore",
+      "email": "benjamin.moore@example.com",
+      "age": 33,
+      "role": "Moderator",
+      "isActive": false
+    },
+    {
+      "id": 9,
+      "name": "Ava Taylor",
+      "email": "ava.taylor@example.com",
+      "age": 24,
+      "role": "User",
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "name": "William Anderson",
+      "email": "william.anderson@example.com",
+      "age": 38,
+      "role": "Admin",
+      "isActive": true
+    },
+    {
+      "id": "d954",
+      "name": "japan test",
+      "email": "mohinr26@gmail.com",
+      "role": "admin",
+      "age": "12",
+      "isActive": false
+    },
+    {
+      "id": "01e4",
+      "name": "ami",
+      "email": "mohinr2666@gmail.com",
+      "role": "admin",
+      "age": "12",
+      "isActive": false
+    },
+    {
+      "id": "4be5",
+      "name": "Universal Studios Japan (USJ)",
+      "email": "mohinr26@gmail.com",
+      "role": "admin",
+      "age": "12",
+      "isActive": false
+    }
+  ],
   "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ],
   "profile": {
     "name": "typicode"

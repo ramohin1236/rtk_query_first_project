@@ -5,19 +5,19 @@ const UserTable = ({ user }) => {
     <div className="flex items-center justify-between p-4 border-b">
       <div>
         <td className="px-6 py-4 text-sm text-gray-700">{user.id}</td>
-      <td className="px-6 py-4 text-sm font-medium text-gray-900">
+      <td className="px-6 py-4 text-sm font-medium text-gray-900 w-40">
         {user.name}
       </td>
-      <td className="px-6 py-4 text-sm text-gray-600">{user.email}</td>
-      <td className="px-6 py-4 text-sm text-gray-700">{user.age}</td>
-      <td className="px-6 py-4 text-sm">
-        <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+      <td className="px-6 py-4 text-sm text-gray-600 w-80">{user.email}</td>
+      <td className="px-6 py-4 text-sm text-gray-700 w-20">{user.age}</td>
+      <td className="px-6 py-4 text-sm w-40">
+        <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700 w-40">
           {user.role}
         </span>
       </td>
       </div>
 
-      <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+      <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 ml-20 mr-6">
         Edit
       </button>
       <button className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-blue-700">
