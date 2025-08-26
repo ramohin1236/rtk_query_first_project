@@ -16,12 +16,16 @@ const userApi = createApi({
 
     // add user
     addUser: builder.mutation({
-        
+        query: (data)=>({
+            url: '/users',
+            method: 'POST',
+            body: data
+        })
     })
   }),
 });
 
 
-export const { useGetUsersQuery } = userApi;
+export const { useGetUsersQuery, useAddUserMutation } = userApi;
 
 export default userApi;
