@@ -1,6 +1,23 @@
 import PropTypes from "prop-types";
+import { useDeleteUserMutation } from "../redux/features/users/userApi";
+import swal from 'sweetalert';
+
+
 
 const UserTable = ({ user }) => {
+
+  const [deleteUser] = useDeleteUserMutation();
+
+  const handleDeleteUser = async (id) => {
+    try {
+      const response =  await deleteUser(id)
+      swal("Good job!", "You clicked the button!", "success");
+      console.log(response)
+    } catch (error) {
+      console.error("Failed to delete user:", error);
+    }
+  };
+
   return (
     <div className="flex items-center justify-between p-4 border-b">
       <div>
@@ -20,7 +37,9 @@ const UserTable = ({ user }) => {
       <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 ml-20 mr-6">
         Edit
       </button>
-      <button className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-blue-700">
+      <button
+      onClick={()=>handleDeleteUser(user?.id)}
+      className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-blue-700">
         Delete
       </button>
     </div>
