@@ -1,35 +1,29 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 const UserTable = ({ user }) => {
   return (
-    <div className="overflow-x-auto">
-  <table className="min-w-full border border-gray-200 rounded-xl shadow-md overflow-hidden">
-    <thead className="bg-gray-100 text-gray-700">
-      <tr>
-        <th className="px-6 py-3 text-left text-sm font-semibold border-b">Id</th>
-        <th className="px-6 py-3 text-left text-sm font-semibold border-b">Name</th>
-        <th className="px-6 py-3 text-left text-sm font-semibold border-b">Email</th>
-        <th className="px-6 py-3 text-left text-sm font-semibold border-b">Age</th>
-        <th className="px-6 py-3 text-left text-sm font-semibold border-b">Role</th>
-      </tr>
-    </thead>
-    <tbody className="divide-y divide-gray-200">
-      <tr className="hover:bg-gray-50 transition-colors">
+    <div className="flex items-center justify-between p-4 border-b">
+      <div>
         <td className="px-6 py-4 text-sm text-gray-700">{user.id}</td>
-        <td className="px-6 py-4 text-sm font-medium text-gray-900">{user.name}</td>
-        <td className="px-6 py-4 text-sm text-gray-600">{user.email}</td>
-        <td className="px-6 py-4 text-sm text-gray-700">{user.age}</td>
-        <td className="px-6 py-4 text-sm">
-          <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
-            {user.role}
-          </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      <td className="px-6 py-4 text-sm font-medium text-gray-900">
+        {user.name}
+      </td>
+      <td className="px-6 py-4 text-sm text-gray-600">{user.email}</td>
+      <td className="px-6 py-4 text-sm text-gray-700">{user.age}</td>
+      <td className="px-6 py-4 text-sm">
+        <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+          {user.role}
+        </span>
+      </td>
+      </div>
 
+      <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+        Edit
+      </button>
+      <button className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-blue-700">
+        Delete
+      </button>
+    </div>
   );
 };
 UserTable.propTypes = {
@@ -43,4 +37,3 @@ UserTable.propTypes = {
 };
 
 export default UserTable;
-

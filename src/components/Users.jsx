@@ -18,9 +18,14 @@ const Users = () => {
         <p className="text-lg font-semibold text-green-600 ">All Users: <span className="font-bold text-blue-600">{users.length}</span></p>
 
         <div>
-            {
-                users.map((user)=><UserTable key={user.id} user={user} />)
-            }
+           <tbody className="divide-y divide-gray-200">
+      <tr className="hover:bg-gray-50 transition-colors">
+        {
+            users.map((user, index)=><UserTable key={index} user={user} />)
+        }
+        
+      </tr>
+    </tbody>
         </div>
     </div>
   )
