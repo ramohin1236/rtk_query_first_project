@@ -79,30 +79,6 @@
       "age": 38,
       "role": "Admin",
       "isActive": true
-    },
-    {
-      "id": "d954",
-      "name": "japan test",
-      "email": "mohinr26@gmail.com",
-      "role": "admin",
-      "age": "12",
-      "isActive": false
-    },
-    {
-      "id": "01e4",
-      "name": "ami",
-      "email": "mohinr2666@gmail.com",
-      "role": "admin",
-      "age": "12",
-      "isActive": false
-    },
-    {
-      "id": "4be5",
-      "name": "Universal Studios Japan (USJ)",
-      "email": "mohinr26@gmail.com",
-      "role": "admin",
-      "age": "12",
-      "isActive": false
     }
   ],
   "comments": [
