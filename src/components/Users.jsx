@@ -1,6 +1,14 @@
+import { useGetUsersQuery } from "../redux/features/users/userApi";
+
+
 
 const Users = () => {
-  return (
+
+   const { data, error, isLoading } = useGetUsersQuery();
+
+   console.log(data)
+   
+    return (
     <div>Users</div>
   )
 }
