@@ -5,11 +5,19 @@ const userApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:3000",
   }),
+  tagTypes: ["User"],
   endpoints: (builder) => ({
+
     //   get all users
     getUsers: builder.query({
       query: () => "/users",
+      providesTags: ["User"],
     }),
+
+    // add user
+    addUser: builder.mutation({
+        
+    })
   }),
 });
 
